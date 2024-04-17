@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Adivinhe o animal!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Animais</ion-card-title>
+    <ion-card-subtitle>Veja abaixo os animais possiveis :</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpBR7e_5azeu9To1G0Rr8rTbI1wwlag2CCdkFANl0WA&s" />
+        </ion-thumbnail>
+        <ion-label>Cachorro</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://img.freepik.com/fotos-gratis/lobo-no-ambiente-natural_23-2150526665.jpg" />
+        </ion-thumbnail>
+        <ion-label>Lobo</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Indiancobra.jpg/280px-Indiancobra.jpg" />
+        </ion-thumbnail>
+        <ion-label>Cobra</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://www.petz.com.br/blog//wp-content/uploads/2023/08/lagartos-de-estimacao.jpg" />
+        </ion-thumbnail>
+        <ion-label>Lagarto</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-content class="ion-padding">
+  <ion-button expand="full" (click)="Iniciarjogo()">Comece a Adivinhar</ion-button>
+
+</ion-content>
