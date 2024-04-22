@@ -1,0 +1,128 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Adivinhe o animal!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Animais</ion-card-title>
+    <ion-card-subtitle>Veja abaixo os animais possiveis :</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpBR7e_5azeu9To1G0Rr8rTbI1wwlag2CCdkFANl0WA&s" />
+        </ion-thumbnail>
+        <ion-label>Cachorro</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://img.freepik.com/fotos-gratis/lobo-no-ambiente-natural_23-2150526665.jpg" />
+        </ion-thumbnail>
+        <ion-label>Lobo</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7_eJpcpbFrbJtl6v9Txe4e1x21gnN8JDHeeXGiObqUQ&s" />
+        </ion-thumbnail>
+        <ion-label>Peixe</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://www.infoescola.com/wp-content/uploads/2010/04/tubarao-branco-144223426.jpg" />
+        </ion-thumbnail>
+        <ion-label>Tubarão</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Indiancobra.jpg/280px-Indiancobra.jpg" />
+        </ion-thumbnail>
+        <ion-label>Cobra</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS4VfLYbFjrBwrgXDOM3NMo_luTvWZ8fuj_cMPocjIe9T5cQrFhbuUUKkj3Hk7Wq_hs" />
+        </ion-thumbnail>
+        <ion-label>Caracol</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://s1.static.brasilescola.uol.com.br/be/e/image/minhoca.jpg" />
+        </ion-thumbnail>
+        <ion-label>Minhoca</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img alt="" src="https://www.petz.com.br/blog//wp-content/uploads/2023/08/lagartos-de-estimacao.jpg" />
+        </ion-thumbnail>
+        <ion-label>Lagarto</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<ion-radio-group [(ngModel)]="r1">
+  <ion-list-header>O animal que você pensou tem patas? </ion-list-header>
+  <ion-item>
+    <ion-label>Sim</ion-label>
+    <ion-radio value="s"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Não</ion-label>
+    <ion-radio value="n"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+
+<ion-radio-group [(ngModel)]="r2">
+  <ion-list-header>O animal que você pensou é domesticado? </ion-list-header>
+  <ion-item>
+    <ion-label>Sim</ion-label>
+    <ion-radio value="s"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Não</ion-label>
+    <ion-radio value="n"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+
+<ion-radio-group [(ngModel)]="r3">
+  <ion-list-header>O animal qeu você pensou tem escamas? </ion-list-header>
+  <ion-item>
+    <ion-label>Sim</ion-label>
+    <ion-radio value="s"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Não</ion-label>
+    <ion-radio value="n"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+
+<ion-radio-group [(ngModel)]="r4">
+  <ion-list-header>O animal que você pensou é invertebrado? </ion-list-header>
+  <ion-item>
+    <ion-label>Sim</ion-label>
+    <ion-radio value="s"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Não</ion-label>
+    <ion-radio value="n"></ion-radio>
+  </ion-item>
+  <ion-button (click)="Advinhar()" expand="block">Adivinhar</ion-button>
+</ion-radio-group>
+<ion-item>{{animal}}</ion-item> 
